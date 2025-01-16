@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Convert <%= @selected_currency %></h1>
+  <p>Go <a href="/">back</a>.</p>
+
+  <ul>
+    <% @currencies.keys.each do | key |%>
+    <li><a href="/<%= @selected_currency %>/<%= key %>">Convert 1 <%= @selected_currency %> to <%= key %>...</a></li>
+    <% end %>
+  </ul>
+  
+  
+</body>
+</html>
